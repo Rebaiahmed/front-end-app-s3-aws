@@ -1,6 +1,22 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + AWS S3 Deployment
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Vue 3 app built with Vite, deployed to **AWS S3** and **CloudFront** using **GitHub Actions**.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
-# front-end-app-s3-aws
+## Deployment
+
+- Push to `main` → GitHub Actions builds and deploys to S3
+- CloudFront cache is automatically invalidated
+
+## Setup
+
+- Configure AWS credentials in GitHub secrets:
+  - `AWS_ACCESS_KEY_ID`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `DISTRIBUTION_ID`
+- Update bucket name in the workflow file
+
+## Resources
+
+- [Vue 3 Docs](https://vuejs.org/)
+- [S3 Static Hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+- [GitHub Actions](https://docs.github.com/en/actions)
