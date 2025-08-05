@@ -4,7 +4,7 @@
 <template>
   <div class="container">
     <header>
-      <h1>Welcome to My Vue App</h1>
+      <h1>Welcome to My Vue App (changes github actions)</h1>
       <p>Deployed on AWS S3 + CloudFront 🚀</p>
     </header>
 
